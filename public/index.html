@@ -8,14 +8,23 @@
 <body>
 
     <form method="post" action="">
-        <label for="firstname">Prénom</label>
-        <input id="firstname" type="text" name="firstname" required>
-        <label for="lastname">Nom</label>
-        <input id="lastname" type="text" name="lastname" required>
-        <label for="email">Email</label>
-        <input id="email" type="email" name="email" required>
-        <label for="phone">Téléphone</label>
-        <input id="phone" type="tel" name="phone" required>
+        <div>
+            <div>
+                <label id="label1" for="firstname">Prénom</label>
+                <input class="test" id="firstname" type="text" name="firstname" required>
+            </div>
+            <div>
+                <label id="label2" for="lastname">Nom</label>
+                <input class="test" id="lastname" type="text" name="lastname" required>
+            </div>
+        </div>
+
+        <label id="label3" for="email">Email</label>
+        <input class="test" id="email" type="email" name="email" required>
+        <label id="label4" for="phone">Téléphone</label>
+        <input class="test" id="phone" type="tel" name="phone" required>
+        <label id="label5" for="birth">Date d'anniversaire</label>
+        <input class="test" id="birth" type="date" name="birth" required>
         <input id="button" type="submit" name="send" value="Créer">
     </form>
 
