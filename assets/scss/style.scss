@@ -1,0 +1,42 @@
+$color : #239DBE;
+$border : 1px solid #d9d9d9;
+$size_10 : 10px;
+
+form {
+  $width_40 : 40%;
+  border: $border;
+  border-radius: $size_10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: $width_40;
+  font-size: 20px;
+}
+
+label {
+  color: $color;
+  margin: 15px;
+}
+
+$none : none;
+
+input {
+  width: 80%;
+  border: $none;
+  background-color: aliceblue;
+  border-radius: $size_10;
+  padding: 5px;
+}
+
+#button {
+  margin: 15px;
+  width: initial;
+  background-color: #239DBE;
+  color: white;
+}
+
+#button:hover {
+  background-color: #0e7894;
+}
