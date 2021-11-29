@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 $color : #e7e7e7;
 $border : 1px solid #d9d9d9;
 $size_10 : 10px;
 
 body {
   background-color: #4980be;
+  font-family: 'Oswald', sans-serif;
 }
 
 body, form > div > div {
@@ -38,6 +40,7 @@ input {
   background-color: aliceblue;
   border-radius: $size_10;
   padding: 5px;
+  font-size: 20px;
 }
 
 #button {
@@ -91,8 +94,8 @@ input.test {
 }
 
 form div {
-  border: 1px dashed #e3e3e3;
-  padding: 10px;
+  border: 3px outset #e3e3e3;
+  padding: $size_10;
 }
 
 input:focus {
@@ -101,5 +104,5 @@ input:focus {
 
 form:hover {
   border: 5px solid #d9d9d9;
-  box-shadow: 5px 10px 10px #ffffff;
+  box-shadow: 5px $size_10 $size_10 #ffffff;
 }
