@@ -3,13 +3,11 @@ $color : #e7e7e7;
 $border : 1px solid #d9d9d9;
 $size_10 : 10px;
 $center : center;
+$none : none;
 
 body {
   background-color: #4980be;
   font-family: 'Oswald', sans-serif;
-}
-
-body, form > div > div {
   display: flex;
   align-items: $center;
   justify-content: $center;
@@ -26,84 +24,76 @@ form {
   width: $width_40;
   font-size: 20px;
   padding: 15px;
-}
 
-label {
-  color: $color;
-  margin: 15px;
-}
+  &:hover {
+    border: 5px solid #d9d9d9;
+    box-shadow: 5px $size_10 $size_10 #ffffff;
+  }
 
-$none : none;
+  label {
+    color: $color;
+    margin: 15px;
+  }
 
-input {
-  width: 80%;
-  border: $none;
-  background-color: aliceblue;
-  border-radius: $size_10;
-  padding: 5px;
-  font-size: 20px;
-}
+  input {
+    width: 80%;
+    border: $none;
+    background-color: aliceblue;
+    border-radius: $size_10;
+    padding: 5px;
+    font-size: 20px;
 
-#button {
-  margin: 15px;
-  width: initial;
-  background-color: #239DBE;
-  color: white;
-  font-size: 30px;
-}
+    &:focus {
+      background-color: black;
+    }
+  }
 
-#button:hover {
-  background-color: #0e7894;
-  font-weight: bold;
-}
+  #button {
+    margin: 15px;
+    width: initial;
+    background-color: #239DBE;
+    color: white;
+    font-size: 30px;
 
-#label3::first-letter {
-  background-color: #30ad00;
-  font-size: 30px;
-  padding: 5px;
-  border-radius: 50% 50% 0 0 ;
-  margin: 0 5px;
-}
+    &:hover {
+      background-color: #0e7894;
+      font-weight: bold;
+    }
+  }
 
-form > label {
-  text-decoration: underline solid;
-}
+  #label3::first-letter {
+    background-color: #30ad00;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 50% 50% 0 0 ;
+    margin: 0 5px;
+  }
 
-.test:nth-child(2) {
-  background-color: #a0d9d9;
-}
+  .test:nth-child(2) {
+    background-color: #a0d9d9;
+  }
 
-form > div {
-  display: flex;
-  flex-direction: row;
-  justify-content: $center;
-  align-items: $center;
-  width: 90%;
-}
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: $center;
+    align-items: $center;
+    width: 90%;
+  }
 
-form > div > div {
-  flex-direction: column;
-  width: 100%;
-}
+  div > div {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: $center;
+    justify-content: $center;
+  }
 
-#label1, #label2 {
-  font-style: italic;
-}
+  #label1, #label2 {
+    font-style: italic;
+  }
 
-input.test {
-  color: #136bde;
-}
-
-form div {
-  border: 3px outset #e3e3e3;
-  padding: $size_10;
-}
-
-input:focus {
-  background-color: black;
-}
-
-form:hover {
-  border: 5px solid #d9d9d9;
-  box-shadow: 5px $size_10 $size_10 #ffffff;
+  input.test {
+    color: #136bde;
+  }
 }

@@ -2,9 +2,6 @@
 body {
   background-color: #4980be;
   font-family: "Oswald", sans-serif;
-}
-
-body, form > div > div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,13 +18,15 @@ form {
   font-size: 20px;
   padding: 15px;
 }
-
-label {
+form:hover {
+  border: 5px solid #d9d9d9;
+  box-shadow: 5px 10px 10px #ffffff;
+}
+form label {
   color: #e7e7e7;
   margin: 15px;
 }
-
-input {
+form input {
   width: 80%;
   border: none;
   background-color: aliceblue;
@@ -35,67 +34,47 @@ input {
   padding: 5px;
   font-size: 20px;
 }
-
-#button {
+form input:focus {
+  background-color: black;
+}
+form #button {
   margin: 15px;
   width: initial;
   background-color: #239DBE;
   color: white;
   font-size: 30px;
 }
-
-#button:hover {
+form #button:hover {
   background-color: #0e7894;
   font-weight: bold;
 }
-
-#label3::first-letter {
+form #label3::first-letter {
   background-color: #30ad00;
   font-size: 30px;
   padding: 5px;
   border-radius: 50% 50% 0 0;
   margin: 0 5px;
 }
-
-form > label {
-  text-decoration: underline solid;
-}
-
-.test:nth-child(2) {
+form .test:nth-child(2) {
   background-color: #a0d9d9;
 }
-
-form > div {
+form div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 90%;
 }
-
-form > div > div {
+form div > div {
   flex-direction: column;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-#label1, #label2 {
+form #label1, form #label2 {
   font-style: italic;
 }
-
-input.test {
+form input.test {
   color: #136bde;
-}
-
-form div {
-  border: 3px outset #e3e3e3;
-  padding: 10px;
-}
-
-input:focus {
-  background-color: black;
-}
-
-form:hover {
-  border: 5px solid #d9d9d9;
-  box-shadow: 5px 10px 10px #ffffff;
 }
