@@ -54,9 +54,6 @@ body form #label3::first-letter {
   border-radius: 50% 50% 0 0;
   margin: 0 5px;
 }
-body form .test:nth-child(2) {
-  background-color: #a0d9d9;
-}
 body form div {
   display: flex;
   flex-direction: row;
@@ -64,16 +61,19 @@ body form div {
   align-items: center;
   width: 90%;
 }
-body form div > div {
+body form div div {
   flex-direction: column;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body form #label1, body form #label2 {
+body form div div .test:nth-child(2) {
+  background-color: #a0d9d9;
+}
+body form div div #label1, body form div div #label2 {
   font-style: italic;
 }
-body form input.test {
+body form .test {
   color: #136bde;
 }

@@ -68,31 +68,31 @@ body {
       margin: 0 5px;
     }
 
-    .test:nth-child(2) {
-      background-color: #a0d9d9;
-    }
-
     div {
       display: flex;
       flex-direction: row;
       justify-content: $center;
       align-items: $center;
       width: 90%;
+
+      div{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        align-items: $center;
+        justify-content: $center;
+
+        .test:nth-child(2) {
+          background-color: #a0d9d9;
+        }
+
+        #label1, #label2 {
+          font-style: italic;
+        }
+      }
     }
 
-    div > div {
-      flex-direction: column;
-      width: 100%;
-      display: flex;
-      align-items: $center;
-      justify-content: $center;
-    }
-
-    #label1, #label2 {
-      font-style: italic;
-    }
-
-    input.test {
+    .test {
       color: #136bde;
     }
   }
