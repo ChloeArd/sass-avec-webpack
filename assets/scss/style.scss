@@ -11,89 +11,89 @@ body {
   display: flex;
   align-items: $center;
   justify-content: $center;
-}
 
-form {
-  $width_40 : 40%;
-  border: $border;
-  border-radius: $size_10;
-  display: flex;
-  flex-direction: column;
-  align-items: $center;
-  justify-content: $center;
-  width: $width_40;
-  font-size: 20px;
-  padding: 15px;
-
-  &:hover {
-    border: 5px solid #d9d9d9;
-    box-shadow: 5px $size_10 $size_10 #ffffff;
-  }
-
-  label {
-    color: $color;
-    margin: 15px;
-  }
-
-  input {
-    width: 80%;
-    border: $none;
-    background-color: aliceblue;
+  form {
+    $width_40 : 40%;
+    border: $border;
     border-radius: $size_10;
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: $center;
+    justify-content: $center;
+    width: $width_40;
     font-size: 20px;
-
-    &:focus {
-      background-color: black;
-    }
-  }
-
-  #button {
-    margin: 15px;
-    width: initial;
-    background-color: #239DBE;
-    color: white;
-    font-size: 30px;
+    padding: 15px;
 
     &:hover {
-      background-color: #0e7894;
-      font-weight: bold;
+      border: 5px solid #d9d9d9;
+      box-shadow: 5px $size_10 $size_10 #ffffff;
     }
-  }
 
-  #label3::first-letter {
-    background-color: #30ad00;
-    font-size: 30px;
-    padding: 5px;
-    border-radius: 50% 50% 0 0 ;
-    margin: 0 5px;
-  }
+    label {
+      color: $color;
+      margin: 15px;
+    }
 
-  .test:nth-child(2) {
-    background-color: #a0d9d9;
-  }
+    input {
+      width: 80%;
+      border: $none;
+      background-color: aliceblue;
+      border-radius: $size_10;
+      padding: 5px;
+      font-size: 20px;
 
-  div {
-    display: flex;
-    flex-direction: row;
-    justify-content: $center;
-    align-items: $center;
-    width: 90%;
-  }
+      &:focus {
+        background-color: black;
+      }
+    }
 
-  div > div {
-    flex-direction: column;
-    width: 100%;
-    display: flex;
-    align-items: $center;
-    justify-content: $center;
-  }
+    #button {
+      margin: 15px;
+      width: initial;
+      background-color: #239DBE;
+      color: white;
+      font-size: 30px;
 
-  #label1, #label2 {
-    font-style: italic;
-  }
+      &:hover {
+        background-color: #0e7894;
+        font-weight: bold;
+      }
+    }
 
-  input.test {
-    color: #136bde;
+    #label3::first-letter {
+      background-color: #30ad00;
+      font-size: 30px;
+      padding: 5px;
+      border-radius: 50% 50% 0 0 ;
+      margin: 0 5px;
+    }
+
+    .test:nth-child(2) {
+      background-color: #a0d9d9;
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: $center;
+      align-items: $center;
+      width: 90%;
+    }
+
+    div > div {
+      flex-direction: column;
+      width: 100%;
+      display: flex;
+      align-items: $center;
+      justify-content: $center;
+    }
+
+    #label1, #label2 {
+      font-style: italic;
+    }
+
+    input.test {
+      color: #136bde;
+    }
   }
 }
